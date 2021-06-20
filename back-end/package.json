@@ -1,0 +1,16 @@
+{
+  "name": "list-supermaket-back-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Conceição dos Santos",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon bin/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
