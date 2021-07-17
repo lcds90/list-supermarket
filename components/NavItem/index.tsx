@@ -12,7 +12,7 @@ export const NavItem = ({color, text}: NavItem) => {
   
   return (
       <li className={styles.navitem}>
-        {text}
+        {text} {color}
       </li>
     )
   }
