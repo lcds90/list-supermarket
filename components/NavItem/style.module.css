@@ -1,0 +1,6 @@
+.navitem {
+  padding: 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 15px;
+}
