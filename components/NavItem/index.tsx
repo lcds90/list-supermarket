@@ -1,18 +1,23 @@
-import styles from './style.module.css'
+import styles from './style.module.css';
 
-type NavItem = {
+type NavItemProps = {
   color: string;
   text: string;
-}
+};
+type colorToApply = {
+  [key: string]: string;
+};
+export const NavItem = ({ color, text }: NavItemProps) => {
+  const checkColor = (colorChoosen: string): string => {
+    // NOTE Object Literals
+    const Colors: colorToApply = {
+      primary: styles.itemPrimary,
+      secondary: styles.itemSecondary,
+      tertiary: styles.itemTertiary,
+    } || styles.itemPrimary;
 
-export const NavItem = ({color, text}: NavItem) => {
+    return Colors[colorChoosen];
+  };
 
-  const checkColor = () => {
-  }
-  
-  return (
-      <li className={styles.navitem}>
-        {text} {color}
-      </li>
-    )
-  }
+  return <li className={checkColor(color)}>{text}</li>;
+};

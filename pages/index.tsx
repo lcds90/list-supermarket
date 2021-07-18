@@ -5,11 +5,14 @@ export default function Home() {
   return (
     <>
       <main className={styles.container}>
-        <Navbar className={styles.navbar}>
-          <NavItem text='Home' color='primary' />
+        <Navbar>
+          <NavItem text='Home' color='primary'/>
           <NavItem text='Item 1' color='secondary' />
           <NavItem text='Item 2' color='tertiary' />
         </Navbar>
+
+      
+
       </main>
     </>
   );

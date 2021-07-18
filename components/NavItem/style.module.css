@@ -1,6 +1,18 @@
-.navitem {
+.itemPrimary {
   padding: 25px;
   background-color: var(--primary-color);
+  color: white;
+  border-radius: 15px;
+}
+.itemSecondary {
+  padding: 25px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 15px;
+}
+.itemTertiary {
+  padding: 25px;
+  background-color: var(--tertiary-color);
   color: white;
   border-radius: 15px;
 }

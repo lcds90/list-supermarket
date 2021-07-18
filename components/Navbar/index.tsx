@@ -1,9 +1,14 @@
+import { ReactChild } from 'react'
 import styles from './style.module.css';
 
-export const Navbar = (props: any) => {
+type Navbar = {
+  children: ReactChild[]
+}
+
+export const Navbar = ({children}: Navbar) => {
   return (
     <nav className={styles.navbar}>
-      <ul>{props.children}</ul>
+      <ul>{children}</ul>
     </nav>
   );
 }
