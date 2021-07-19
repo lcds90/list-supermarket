@@ -10,9 +10,6 @@ export default function Home() {
           <NavItem text='Item 1' color='secondary' />
           <NavItem text='Item 2' color='tertiary' />
         </Navbar>
-
-      
-
       </main>
     </>
   );
